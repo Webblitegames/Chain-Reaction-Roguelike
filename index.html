@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Chain Reaction Roguelike — Prototype</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><b>CHAIN REACTION</b><small>ROGUELIKE • V0.1</small></div><div class="stats"><span>SCORE <b id="score">0</b></span><span>COMBO <b id="combo">×1.0</b></span><span>BEST <b id="best">0</b></span></div></header>
+<main>
+<canvas id="game"></canvas>
+<div id="message">BUILD YOUR MACHINE</div>
+</main>
+<nav>
+<button data-tool="domino">▯<small>DOMINO</small></button>
+<button data-tool="ball">●<small>BALL</small></button>
+<button data-tool="ramp">╱<small>RAMP</small></button>
+<button data-tool="spring">↟<small>SPRING</small></button>
+<button data-tool="target">◎<small>TARGET</small></button>
+</nav>
+<footer><button id="undo">UNDO</button><button id="clear">CLEAR</button><button id="go">▶ GO</button><button id="reset">RESET</button></footer>
+<script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+<script src="game.js"></script>
+</body></html>
